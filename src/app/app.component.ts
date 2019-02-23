@@ -10,8 +10,10 @@ export class AppComponent {
   user: any;
 
   login(user): void {
+    this.user = user;
   }
 
   logout(): boolean {
+    this.user = false:
   }
 }
