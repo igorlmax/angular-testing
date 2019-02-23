@@ -8,12 +8,19 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-testing';
 
+    /**
+     *
+     * @param user
+     */
+    login(user): void {
+        this.user = user;
+    }
 
-  login() {
-
-  }
-
-  logout() {
-
-  }
+    /**
+     *
+     * @return {boolean}
+     */
+    logout(): boolean {
+        this.user = false:
+    }
 }
