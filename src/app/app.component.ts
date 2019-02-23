@@ -37,9 +37,12 @@ export class AppComponent {
     }
 
     /**
-     * Craete a new user
+     *
+     * @param user
+     * @return {boolean}
      */
-    create() {
+    create(user): boolean{
       this.isAuthenticated = true;
+      return true;
     }
 }
