@@ -7,13 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-testing';
+  user: any;
 
-
-  login() {
-
+  login(user): void {
   }
 
-  logout() {
-
+  logout(): boolean {
   }
 }
