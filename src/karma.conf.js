@@ -18,26 +18,14 @@ module.exports = function (config) {
     coverageIstanbulReporter: {
       dir: require('path').join(__dirname, '../coverage/angular-testing'),
       reports: ['html', 'lcovonly', 'text-summary'],
-      fixWebpackSourcePaths: true,
-        thresholds: {
-            statements: 80,
-            lines: 80,
-            branches: 80,
-            functions: 80
-        }
+      fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-      browsers: ['Chrome'],
-      customLaunchers: {
-          ChromeHeadlessCI: {
-              base: 'ChromeHeadless',
-              flags: ['--no-sandbox']
-          }
-      },
+    browsers: ['Chrome'],
     singleRun: false
   });
 };

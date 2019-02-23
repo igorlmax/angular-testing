@@ -2,13 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LightswitchCompComponent } from './components/lightswitch-comp/lightswitch-comp.component';
+import {HomeComponent} from "./home/home.component";
+import {AppComponent} from "./app.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LightswitchCompComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
