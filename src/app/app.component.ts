@@ -27,7 +27,11 @@ export class AppComponent {
         this.user = false:
     }
 
-    logout(): {
-
+    /**
+     *
+     * @param user
+     */
+    logout(user): void{
+        this.user = user;
     }
 }
