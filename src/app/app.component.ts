@@ -35,11 +35,11 @@ export class AppComponent {
     logout(user): void{
         this.user = user;
     }
-
     /**
      * Craete a new user
      */
-    create() {
+    create(): boolean{
       this.isAuthenticated = true;
+      return true;
     }
 }
