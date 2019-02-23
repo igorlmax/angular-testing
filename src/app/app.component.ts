@@ -25,6 +25,7 @@ export class AppComponent {
      */
     logout(): boolean {
         this.user = false:
+        this.isAuthenticated = false;
     }
 
     /**
