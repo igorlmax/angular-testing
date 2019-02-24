@@ -39,7 +39,8 @@ describe('HomeComponent', () => {
 
     it(`should have as title 'unit test testing'`, () => {
         const fixture = TestBed.createComponent(HomeComponent);
-        expect(home.title).toEqual('Welcome');
+        const home = fixture.debugElement.componentInstance;
+        expect(home.title).toEqual('Welcomea');
     });
 
 });
