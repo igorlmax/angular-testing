@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-testing';
-  user: any;
-  isAuthenticated: false;
-  isAuthorized: false;
+    title = 'angular-testing';
+    user: any;
+    isAuthenticated: false;
+    isAuthorized: false;
 
     /**
      *
@@ -23,17 +23,9 @@ export class AppComponent {
      *
      * @return {boolean}
      */
-    logout(): boolean {
-        this.user = false:
+    logout() {
+        this.user = false;
         this.isAuthenticated = false;
-    }
-
-    /**
-     *
-     * @param user
-     */
-    logout(user): void{
-        this.user = user;
     }
 
     /**
@@ -41,8 +33,8 @@ export class AppComponent {
      * @param user
      * @return {boolean}
      */
-    create(user): boolean{
-      this.isAuthenticated = true;
-      return true;
-    }
+    // create(user) {
+    //     this.isAuthenticated = true;
+    //     return user;
+    // }
 }
